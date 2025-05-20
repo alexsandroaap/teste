@@ -3,7 +3,7 @@ import mercadopago from "mercadopago";
 import cors from "cors";
 
 mercadopago.configure({
-  access_token: "APP_USR-332673202870613-051221-6120ab2e05f61e8a7c40d2d3fa3c6d28-48332656" // Coloque aqui seu token do Mercado Pago
+  access_token: "process.env.ACCESS_TOKEN" // Coloque aqui seu token do Mercado Pago
 });
 
 const app = express();
